@@ -63,5 +63,8 @@ age-gender-detection/
 └── ...                     # Other backend files
 ```
 
+## Credits
+The dataset used for training and testing the age and gender models was obtained [here](https://colab.research.google.com/github/MikeKwak/Gender-Age-Prediction-Model/blob/main/AgeGenderPredictionModel.ipynb#scrollTo=5wb2AHF4-zDa). We acknowledge and thank the authors for making this dataset publicly available.
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
