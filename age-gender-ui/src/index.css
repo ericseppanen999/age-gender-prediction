@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ripple-effect {
+  position: fixed;
+  width: 0;
+  height: 0;
+  background: var(--ripple-color, rgba(0, 0, 0, 0.8));
+  border-radius: 50%;
+  z-index: 50;
+  animation: ripple 1s ease-out;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+/* animation for ripple */
+@keyframes ripple {
+  to {
+      width: 200vw; 
+      height: 200vw;
+      opacity: 0;
+  }
+}
+
+/* light mode ripple colour */
+body:not(.dark) .ripple-effect {
+  --ripple-color: rgba(0, 0, 0, 0.8);
+}
+
+/* dark ripple color */
+body.dark .ripple-effect {
+  --ripple-color: rgba(255, 255, 255, 0.8);
+}
